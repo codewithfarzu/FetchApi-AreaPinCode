@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fetch-Api Search City with Pincode">
+
+        <title>Fetch-Api</title>
+
+        <link rel="stylesheet" href="/Assets/css/style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="city-box justify-item-cent">
+                    <h1>Search City By Pincode</h1>
+                    <div class="input-box">
+                        <form name="pincode">
+                            <label>
+                                Seacrh:
+                                <input type="search" name="pin" placeholder="Pincode" required pattern="[0-9]{6}">
+                            </label>
+                            <button class="btn b1">Search</button><output name="err"></output>
+                        </form>
+                        <table class="table">
+                           <thead>
+                            <tr>
+                                <th>Se No.</th>
+                                <th>Name</th>
+                                <th>District</th>
+                                <th>Division</th>
+                                <th>State</th>
+                            </tr>
+                           </thead>
+                           <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script src="/Assets/js/main.js"></script>
+    </body>
+</html>
